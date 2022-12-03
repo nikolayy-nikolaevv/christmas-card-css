@@ -7,10 +7,64 @@ html, body {
 }
 
 #container {
-    width: 60vw;
-    height: 60vh;
     position: absolute;
-    top: 25vh;
-    left: 20vw;
-    background-color: #020751;
+    left: 0vw;
+    top: 0vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000044;
+}
+
+#room {
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    left: 0vw;
+    bottom: 0vh;
+    background-color: #C19A6B;
+    border-bottom: 30vh solid #DEB887;
+    border-left: 20vw solid #B37B50;
+}
+
+.floor-lines {
+    position: absolute;
+    height: 1vh;
+    background-color: #5d2906;
+}
+
+#floor-line-1 {
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    width: 96.7vw;
+    height: 1vh;
+    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+}
+
+#floor-line-2 {
+    position: absolute;
+    bottom: 15vh;
+    right: 0;
+    width: 90vw;
+    height: 1vh;
+    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+}
+
+#floor-line-3 {
+    position: absolute;
+    bottom: 25vh;
+    right: 0;
+    width: 83.4vw;
+    height: 1vh;
+    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+}
+
+#window {
+    position: absolute;
+    top: 15vh;
+    right: 20vh;
+    width: 25vw;
+    height: 35vh;
+    background: darkblue;
+    border: 1vw solid #5d2906;
 }
