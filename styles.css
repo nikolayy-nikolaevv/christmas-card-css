@@ -1,3 +1,8 @@
+:root {
+    --lines-clip: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+    --tree-parts-clip: polygon(50% 0, 65% 25%, 80% 40%, 100% 50%, 65% 60%, 50% 60%, 35% 60%, 0 50%, 20% 40%, 35% 25%);
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -38,7 +43,7 @@ html, body {
     right: 0;
     width: 96.7vw;
     height: 1vh;
-    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+    clip-path: var(--lines-clip)
 }
 
 #floor-line-2 {
@@ -47,7 +52,7 @@ html, body {
     right: 0;
     width: 90vw;
     height: 1vh;
-    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+    clip-path: var(--lines-clip)
 }
 
 #floor-line-3 {
@@ -56,15 +61,56 @@ html, body {
     right: 0;
     width: 83.4vw;
     height: 1vh;
-    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
+    clip-path: var(--lines-clip)
 }
 
 #window {
     position: absolute;
     top: 15vh;
-    right: 20vh;
+    right: 15vw;
     width: 25vw;
     height: 35vh;
     background: darkblue;
     border: 1vw solid #5d2906;
+}
+
+#tree-log {
+    position: absolute;
+    bottom: 20vh;
+    left: 30vw;
+    width: 5vw;
+    height: 10vh;
+    background: #5d2906;
+}
+
+.tree-part {
+    height: 35vh;
+    background: green;
+    clip-path: var(--tree-parts-clip);
+}
+
+#tree-top {
+    position: absolute;
+    top: 5vh;
+    left: 22.5vw;
+    width: 20vw;
+}
+
+#tree-middle-1 {
+    position: absolute;
+    top: 20vh;
+    left: 21.5vw;
+    width: 22vw;
+}
+#tree-middle-2 {
+    position: absolute;
+    top: 35vh;
+    left: 20.5vw;
+    width: 24vw;
+}
+#tree-middle-3 {
+    position: absolute;
+    top: 50vh;
+    left: 19.5vw;
+    width: 26vw;
 }
