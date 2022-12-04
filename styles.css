@@ -298,3 +298,10 @@ html, body {
     background: red;
     box-shadow: 0 0 1vw 0.3vw red;
 }
+
+#lightbulb-18 {
+    position: absolute;
+    left: 85vw;
+    background: green;
+    box-shadow: 0 0 1vw 0.3vw green;
+}
