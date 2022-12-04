@@ -290,3 +290,11 @@ html, body {
     background: gold;
     box-shadow: 0 0 1vw 0.3vw gold;
 }
+
+
+#lightbulb-17 {
+    position: absolute;
+    left: 85vw;
+    background: red;
+    box-shadow: 0 0 1vw 0.3vw red;
+}
