@@ -1,8 +1,7 @@
 :root {
     --lines-clip: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0 100%, 0.8% 0);
-    --tree-parts-clip: polygon(50% 0, 65% 25%, 80% 40%, 100% 50%, 65% 60%, 50% 60%, 35% 60%, 0 50%, 20% 40%, 35% 25%);
-    --tree-balls-clip: circle(50% at 50% 50%); /* unused */
-    --tree-ellipse-clip: ellipse(25% 46% at 50% 50%);
+    --tree-parts-clip: polygon(24% 1%, 21% 19%, 15% 49%, 9% 72%, 1% 96%, 12% 89%, 20% 87%, 28% 90%, 37% 91%, 47% 86%, 57% 88%, 66% 84%, 75% 83%, 84% 86%, 91% 83%, 100% 90%, 92% 69%, 87% 50%, 82% 26%, 77% 0, 68% 1%, 56% 6%, 41% 1%, 32% 10%);
+    --tree-top-clip: polygon(2% 97%, 10% 80%, 17% 61%, 25% 43%, 35% 17%, 43% 1%, 52% 1%, 59% 16%, 68% 36%, 76% 53%, 85% 69%, 98% 96%, 90% 92%, 82% 86%, 71% 86%, 56% 83%, 44% 88%, 29% 87%, 18% 89%, 7% 93%);
 }
 
 html, body {
@@ -78,42 +77,64 @@ html, body {
 
 #tree-log {
     position: absolute;
-    bottom: 20vh;
-    left: 30vw;
+    bottom: 10vh;
+    left: 25vw;
     width: 5vw;
     height: 10vh;
     background: #5d2906;
 }
 
 .tree-part {
-    height: 35vh;
+    height: 25vh;
     background: darkgreen;
     clip-path: var(--tree-parts-clip);
 }
 
+#tree-star {
+    position:absolute;
+    top: 7vh;
+    left: 23vw;
+    width: 8vw;
+    height: 8vw;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: goldenrod;
+}
+
+#star-glow {
+    position:absolute;
+    top: 12vh;
+    left: 26vw;
+    background: goldenrod;
+    box-shadow: 0 0 7vw 5vw goldenrod;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+}
+
 #tree-top {
     position: absolute;
-    top: 5vh;
-    left: 22.5vw;
+    top: 15vh;
+    left: 17.5vw;
     width: 20vw;
+    clip-path: var(--tree-top-clip);
 }
 
 #tree-middle-1 {
     position: absolute;
-    top: 20vh;
-    left: 21.5vw;
+    top:30vh;
+    left: 16.5vw;
     width: 22vw;
 }
 #tree-middle-2 {
     position: absolute;
-    top: 35vh;
-    left: 20.5vw;
+    top: 45vh;
+    left: 15.5vw;
     width: 24vw;
 }
 #tree-middle-3 {
     position: absolute;
-    top: 50vh;
-    left: 19.5vw;
+    top: 60vh;
+    left: 14.5vw;
     width: 26vw;
 }
 
@@ -123,52 +144,100 @@ html, body {
     border-radius: 50% 50%;
 }
 
+.tree-balls:hover {
+    scale: 1.1;
+}
+
 #tree-ball-1 {
     position:absolute;
-    top: 22vh;
-    left: 25vw;
+    top: 23vh;
+    left: 22vw;
     background: #BD200C;
     box-shadow: 0 0 6vw 2vw #BD200C;
 }
 
+
 #tree-ball-2 {
     position:absolute;
-    top: 36vh;
-    left: 38vw;
-    background: #C59849;
-    box-shadow: 0 0 6vw 2vw #C59849;
-}
-
-#tree-ball-3 {
-    position:absolute;
-    top: 60vh;
-    left: 25vw;
+    top: 27vh;
+    left: 32vw;
     background: #05668D;
     box-shadow: 0 0 6vw 2vw #05668D;
 }
 
+#tree-ball-3 {
+    position:absolute;
+    top: 35vh;
+    left: 27vw;
+    background: #C59849;
+    box-shadow: 0 0 6vw 2vw #C59849;
+}
+
+
 #tree-ball-4 {
     position:absolute;
-    top: 12vh;
-    left: 33vw;
+    top: 45vh;
+    left: 20vw;
     background: green;
     box-shadow: 0 0 6vw 2vw green;
 }
 
 #tree-ball-5 {
     position:absolute;
-    top: 38vh;
-    left: 28vw;
+    top: 48vh;
+    left:34vw;
     background: turquoise;
     box-shadow: 0 0 6vw 2vw turquoise;
 }
 
 #tree-ball-6 {
     position:absolute;
-    top: 60vh;
-    left: 25vw;
+    top: 54vh;
+    left: 26vw;
     background: orange;
     box-shadow: 0 0 6vw 2vw orange;
+}
+
+#tree-ball-7 {
+    position:absolute;
+    top: 62vh;
+    left: 17vw;
+    background: white;
+    box-shadow: 0 0 6vw 2vw white;
+}
+#tree-ball-8 {
+    position:absolute;
+    top: 64vh;
+    left: 30vw;
+    background: blue;
+    box-shadow: 0 0 6vw 2vw blue;
+}
+#tree-ball-9 {
+    position:absolute;
+    top: 72vh;
+    left: 22vw;
+    background: orange;
+    box-shadow: 0 0 6vw 2vw orange;
+}
+#tree-ball-10 {
+    position:absolute;
+    top: 75vh;
+    left: 36vw;
+    background: red;
+    box-shadow: 0 0 6vw 2vw red;
+}
+
+#lightbulb-line-big {
+    width:79.8vw; 
+    height:1vh;  
+    border: solid 0.3vw #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 0 0 240% 50%/20vw;
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 0px;
+    margin-right: 0vw;
 }
 
 .lightbulbs {
@@ -179,6 +248,10 @@ html, body {
     border-top-left-radius: 40% 100%;
     border-top-right-radius: 40% 100%;
     top: 2vh;
+}
+
+.lightbulbs:hover {
+    scale: 1.1;
 }
 
 #lightbulb-1 {
@@ -301,7 +374,105 @@ html, body {
 
 #lightbulb-18 {
     position: absolute;
-    left: 85vw;
+    left: 89vw;
+    background: green;
+    box-shadow: 0 0 1vw 0.3vw green;
+}
+
+
+#lightbulb-19 {
+    position: absolute;
+    left: 93vw;
+    background: blue;
+    box-shadow: 0 0 1vw 0.3vw blue;
+}
+
+#lightbulb-20 {
+    position: absolute;
+    left: 97vw;
+    background: gold;
+    box-shadow: 0 0 1vw 0.3vw gold;
+}
+
+#lightbulb-line-small {
+    width:26vw; 
+    height:1vh;  
+    border: solid 0.3vw #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 0 0 240% 50%/20vw;
+    position:absolute;
+    top: 8.1vw;
+    left: -3.6vw;
+    transform: rotate(-43grad);
+}
+
+.lightbulbs-small {
+    width: 2vh;
+    height: 2vh;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 40% 100%;
+    transform: rotate(-45grad);
+}
+
+.lightbulbs-small:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10vw 10vw;
+}
+
+#lightbulb-1-small {
+    position: absolute;
+    left: 19vw;
+    top: 3vh;
+    background: gold;
+    box-shadow: 0 0 1vw 0.3vw gold;
+}
+
+#lightbulb-2-small {
+    position: absolute;
+    left: 16vw;
+    top: 8vh;
+    background: blue;
+    box-shadow: 0 0 1vw 0.3vw blue;
+}
+
+#lightbulb-3-small {
+    position: absolute;
+    left: 13vw;
+    top: 13vh;
+    background: green;
+    box-shadow: 0 0 1vw 0.3vw green;
+}
+
+#lightbulb-4-small {
+    position: absolute;
+    left: 10vw;
+    top: 18vh;
+    background: red;
+    box-shadow: 0 0 1vw 0.3vw red;
+}
+
+#lightbulb-5-small {
+    position: absolute;
+    left: 7vw;
+    top: 23vh;
+    background: gold;
+    box-shadow: 0 0 1vw 0.3vw gold;
+}
+
+#lightbulb-6-small {
+    position: absolute;
+    left: 4vw;
+    top: 28vh;
+    background: blue;
+    box-shadow: 0 0 1vw 0.3vw blue;
+}
+
+#lightbulb-7-small {
+    position: absolute;
+    left: 1vw;
+    top: 33vh;
     background: green;
     box-shadow: 0 0 1vw 0.3vw green;
 }
