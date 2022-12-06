@@ -476,3 +476,48 @@ html, body {
     background: green;
     box-shadow: 0 0 1vw 0.3vw green;
 }
+
+.card {
+    width: 480px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
+    border-radius: 16px;
+    background-color: azure;
+}
+
+.cardtext {
+    padding: 8px 8px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.lcenter{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+}
+
+.tcenter {
+    margin: 0 auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rcenter {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0%, -50%);
+}
