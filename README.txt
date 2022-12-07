@@ -1,1 +1,1 @@
-Chrome @ 1080p;1440p
+Tested in Chrome @ 1080p;1440p
