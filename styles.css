@@ -777,10 +777,22 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
     animation-iteration-count: infinite; /*setzt die Animation auf Dauerschleife*/
 }
 
+#moon { /*setzt den Stern am Fenster*/
+    position: absolute;
+    top: 21vh;
+    right: 28vw;
+    width: 5vw;
+    height: 5vw;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 55% 74%, 60% 51%, 59% 25%); /*setzt die Forme der Mond*/
+    background-color: powderblue;
+    opacity: 0.9;
+}
+
 .snowflakes { /*definiert die Attributen für die Schneeflocken*/
     width: 1vw;
     height: 1vw;
     border-radius: 50% 50%;
+    box-shadow: 0 0vw 0.2vw 0.1vw #ffffff;
 }
 
 #snowflake-1 {  /*definiert weitere Attributen für jede Schneeflocke*/
@@ -1182,6 +1194,29 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
     animation-delay: 3.2s;
 }
 
+#door {
+    position: absolute;
+    right: 0;
+    bottom: 30vh;
+    width: 15vw;
+    height: 55vh;
+    background-color: #CCAA66;
+    border-top: 5vh solid #221100;
+    border-left: 5vh solid #332211;
+}
+
+#doorknob {
+    position: absolute;
+    right: 11vw;
+    top: 45vh;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50% 50%;
+    background-color: #111122;
+    box-shadow: 0 0.1vw 1vw 0.1vw #111122;
+
+}
+
 
 /*beginn rückseite*/
 
@@ -1210,14 +1245,15 @@ h2 {
 }
 
 .text {
-    font-size 16pt;
+    font-size: 16pt;
     font-family: Cooper;
 }
 
 .sourcetext {
-    font-size: 12pt;
+    font-size: 8pt;
     font-family: Arial;
     color: white;
+    font-style: italic;
 }
 
 #qrcode { /*setzt den QR Code oben rechts*/
@@ -1259,7 +1295,7 @@ h2 {
     width: 25vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
     border-radius: 2vw;
-    background-color: #34A65F;
+    background-color: #037a31;
 }
 
 #cardtext {
