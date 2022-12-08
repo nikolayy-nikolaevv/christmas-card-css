@@ -203,7 +203,7 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: darkred;
 }
 
 #room { /*definiert die Hinterwand*/
@@ -256,8 +256,20 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
     right: 25vw;
     width: 25vw;
     height: 35vh;
-    background: #131862    ;
+    background: #131862;
     border: 1vw solid #361600;
+    border-style: outset;
+}
+
+#window-border { /*setzt Fenster border...*/
+    z-index: 512; /*...damit Schnee aussieht, als würde es von hinten fallen*/
+    position: absolute;
+    top: 15vh;
+    right: 25vw;
+    width: 25vw;
+    height: 35vh;
+    border: 1vw solid #361600;
+    border-style: outset;
 }
 
 #tree-log { /*setzt den Stamm vom Tannenbaum*/
@@ -297,7 +309,7 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
 
 #back-side-button {
     display: flex;
-    position:absolute;
+    position: absolute;
     top: 0;
     right: 0;
     width: 5vw;
@@ -1174,23 +1186,78 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
 /*beginn rückseite*/
 
 
-iframe{ /*setzt iframe etwa 16:9*/
+iframe { /*setzt iframe etwa 16:9*/
     width: 25vw;
     height: 14vw;
     overflow: hidden; /*gibt abgerundete ecke durch 'abschneiden' was über container geht*/
     border-radius: 1vw;
 }
 
-img{
+img {
     overflow: hidden;
     border-radius: 1vw;
+    width: 100%;
+}
+
+h1 {
+    font-size: 20pt;
+    font-family: Cooper; /*ändert Font zu Cooper*/
+}
+
+h2 {
+    font-size: 20pt;
+    font-family: Cooper;
+}
+
+.text {
+    font-size 16pt;
+    font-family: Cooper;
+}
+
+.sourcetext {
+    font-size: 12pt;
+    font-family: Arial;
+    color: white;
+}
+
+#qrcode { /*setzt den QR Code oben rechts*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#arrow-back { /*macht einen Pfeil für die vorherige Seite aufrufen*/
+    margin: 0 1vw 0 0.5vw;
+    border: solid white;
+    border-radius: 0.25vw;
+    border-width: 0 1vw 1vw 0;
+    display: inline-block;
+    padding: 1vw;
+    transform: rotate(135deg) translate(-50%);
+}
+
+#front-side-button {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 100vh;
+    background-color: transparent;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#front-side-button:hover {
+    background-color: #333333;
+    opacity: 0.6;
 }
 
 .card { /*gibt der card Klasse gleiche Breite wie iframe*/
     width: 25vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
     border-radius: 2vw;
-    background-color: lightgray;
+    background-color: #34A65F;
 }
 
 #cardtext {
@@ -1207,14 +1274,6 @@ img{
     top: 50%;
     left: 5%;
     transform: translate(0%, -50%);
-}
-
-#tcenter {
-    margin: 0 auto; /*setzt Elementanfang mittig*/
-    position: absolute; /*beginnt oben links*/
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*verschiebt um die hälfte damit Element mittig ist*/
 }
 
 .center {
