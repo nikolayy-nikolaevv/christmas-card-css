@@ -286,15 +286,30 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
 }
 
 #arrow { /*macht einen Pfeil für die nächste Seite aufrufen*/
-    position: absolute;
-    top: 15vw;
-    right: 10vw;
+    margin: 0 1vw 0 0.5vw;
     border: solid white;
     border-radius: 0.25vw;
     border-width: 0 1vw 1vw 0;
     display: inline-block;
     padding: 1vw;
     transform: rotate(-45deg);
+}
+
+#back-side-button {
+    display: flex;
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 5vw;
+    height: 100vh;
+    background-color: transparent;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#back-side-button:hover {
+    background-color: #333333;
+    opacity: 0.6;
 }
 
 #tree-star:hover { /*Stern wird 10% größer beim Hover*/
@@ -306,10 +321,10 @@ html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
     top: 12vh;
     left: 26vw;
     background: goldenrod;
-    box-shadow: 0 0 7vw 5vw goldenrod;
     width: 2vw;
     height: 2vw;
-    border-radius: 100%;
+    box-shadow: 0 0 7vw 5vw goldenrod;
+    border-radius: 50% 50%;
 }
 
 #tree-top { /*setzt den obersten Teil vom Baum*/
@@ -1167,11 +1182,11 @@ iframe{ /*setzt iframe etwa 16:9*/
 }
 
 img{
-    overflow: hidden; 
+    overflow: hidden;
     border-radius: 1vw;
 }
 
-.card { /*gibt der card Klasse gleiche Breite wie iframe*/      
+.card { /*gibt der card Klasse gleiche Breite wie iframe*/
     width: 25vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
     border-radius: 2vw;
@@ -1188,7 +1203,7 @@ img{
 }
 
 #lcenter{
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 5%;
     transform: translate(0%, -50%);
