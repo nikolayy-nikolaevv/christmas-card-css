@@ -1224,6 +1224,8 @@ h2 {
     position: absolute;
     top: 0;
     right: 0;
+    width: 15vw;
+    height: 15vw;
 }
 
 #arrow-back { /*macht einen Pfeil für die vorherige Seite aufrufen*/
