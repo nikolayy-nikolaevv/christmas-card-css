@@ -198,7 +198,7 @@
     }
 }
 
-html, body { /*animiert den Farbwechsel von den Glühbirnen von den Lichketten*/
+html, body { /*setzt den hintergrund für die ganze Seite (wird nur auf Hinterseite benutzt)*/
     width: 100%;
     height: 100%;
     margin: 0;
@@ -1274,7 +1274,7 @@ h2 {
     transform: rotate(135deg) translate(-50%);
 }
 
-#front-side-button {
+#front-side-button { /*definiert den Button zur Vorderseite*/
     display: flex;
     position: absolute;
     top: 0;
@@ -1291,9 +1291,9 @@ h2 {
     opacity: 0.6;
 }
 
-.card { /*gibt der card Klasse gleiche Breite wie iframe*/
+.card { /*definiert die Karten*/
     width: 25vw;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 0.8vw 16px 0 rgba(0,0,0,0.25);
     border-radius: 2vw;
     background-color: #037a31;
 }
@@ -1327,4 +1327,26 @@ h2 {
     top: 50%;
     right: 5%;
     transform: translate(0%, -50%);
+}
+
+.recipient { /*setzt den Empfänger*/
+    position: absolute;
+    bottom: 2vh;
+    right: 5vw;
+    font-family: Segoe Script;
+    font-size: 20pt;
+    font-weight:bold;
+    color: white;
+    width: 25vw;
+}
+
+hr{  /*bringt die linien vom Empfänger näher zusammen*/
+    margin: -0.1vw;
+}
+
+#impressum {
+    position: absolute;
+    top: 95vh;
+    font-size: 16pt;
+    font-family: Cooper;
 }
