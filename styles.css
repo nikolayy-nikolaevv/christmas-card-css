@@ -206,6 +206,10 @@ html, body { /*setzt den hintergrund für die ganze Seite (wird nur auf Hinterse
     background-color: darkred;
 }
 
+a, a:visited { /*setzt die Linkfarbe zu weiss*/
+    color: white;
+}
+
 #room { /*definiert die Hinterwand*/
     position: absolute;
     width: 80vw;
@@ -257,7 +261,7 @@ html, body { /*setzt den hintergrund für die ganze Seite (wird nur auf Hinterse
     width: 25vw;
     height: 35vh;
     background: #131862;
-    border: 1vw solid #361600;
+    border: 1.2vw solid #361600;
     border-style: outset;
 }
 
@@ -268,7 +272,7 @@ html, body { /*setzt den hintergrund für die ganze Seite (wird nur auf Hinterse
     right: 25vw;
     width: 25vw;
     height: 35vh;
-    border: 1vw solid #361600;
+    border: 1.2vw solid #361600;
     border-style: outset;
 }
 
